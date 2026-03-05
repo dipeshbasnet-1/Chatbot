@@ -1,0 +1,103 @@
+/* Full screen gradient background */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+/* Center the chat card */
+.chat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Glassmorphism card */
+.chat-card {
+    width: 400px;
+    max-width: 90%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.3);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Title */
+.chat-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Chat box */
+.chat-box {
+    height: 300px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding-right: 5px;
+    margin-bottom: 15px;
+}
+
+/* Placeholder text */
+.placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    margin-top: 120px;
+    font-size: 18px;
+}
+
+/* Messages */
+.user-msg {
+    align-self: flex-end;
+    background: linear-gradient(135deg, #00f5a0, #00d9f5);
+    padding: 10px 15px;
+    border-radius: 20px 20px 5px 20px;
+    margin: 5px 0;
+    color: black;
+    max-width: 70%;
+}
+
+.bot-msg {
+    align-self: flex-start;
+    background: linear-gradient(135deg, #ffffff, #dfe9f3);
+    padding: 10px 15px;
+    border-radius: 20px 20px 20px 5px;
+    margin: 5px 0;
+    color: black;
+    max-width: 70%;
+}
+
+/* Input area */
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+.input-area input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+}
+
+.input-area button {
+    padding: 12px 20px;
+    border-radius: 15px;
+    border: none;
+    background: linear-gradient(135deg, #00f5a0, #00d9f5);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.input-area button:hover {
+    transform: scale(1.05);
+}
