@@ -14,11 +14,12 @@ function AdminDashboard() {
         .then(res => setData(res.data))
         .catch(err => console.log(err));
     }, []);
-
-return (
-    <div className="admin-container">
-        <div className="admin-card">
-            <h2 className="admin-title">Admin Analytics Dashboard</h2>
+    
+    
+    return (
+        <div className="admin-container">
+            <div className="admin-card">
+                <h2 className="admin-title">Admin Analytics Dashboard</h2>
             
             <div className="stat-box">  
                 <h3>Total Chats</h3>

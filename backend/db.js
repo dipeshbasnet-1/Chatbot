@@ -14,7 +14,7 @@ const client = new MongoClient(uri, {
 async function connectDB() {
   try {
     await client.connect();
-    console.log("Connected to MongoDB Atlas");
+    console.log("✅Connected to MongoDB Atlas");
 
     const db = client.db("Chatbot");
     return db;
